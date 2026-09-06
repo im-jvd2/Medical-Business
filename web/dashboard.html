@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل کاربری | مدیکال بیزینس</title>
+  <meta name="description" content="پنل کاربری خریدار مدیکال بیزینس — دوره‌های من، سفارش‌ها، فاکتورها، تیکت‌های پشتیبانی و تنظیمات پروفایل">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- نوار بالا -->
+  <header class="d-topbar">
+    <div class="d-top-inner">
+      <div class="d-brand">
+        <button class="d-burger" id="dBurger" aria-label="منو">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a href="index.html" class="brand">
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          <span class="brand-text"><strong>پنل کاربری</strong><span>مدیکال بیزینس</span></span>
+        </a>
+      </div>
+      <div class="d-top-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="dSearch" placeholder="جستجو در دوره‌ها، سفارش‌ها و تیکت‌ها...">
+      </div>
+      <div class="d-top-actions">
+        <a href="courses.html" class="d-link-web">بازگشت به سایت</a>
+        <div class="d-bell" id="dBellWrap">
+          <button class="icon-btn" id="dBell" aria-label="اعلان‌ها">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            <span class="bell-dot" id="bellDot"></span>
+          </button>
+          <div class="d-pop" id="bellPop" hidden>
+            <div class="d-pop-head">اعلان‌ها <button type="button" id="bellReadAll">خواندن همه</button></div>
+            <div class="d-pop-list" id="bellList"></div>
+          </div>
+        </div>
+        <div class="d-avatar-wrap" id="dAvatarWrap">
+          <button class="d-avatar-btn" id="dAvatarBtn"></button>
+          <div class="d-pop d-avatar-pop" id="avatarPop" hidden>
+            <div class="d-avatar-head" id="avatarHead"></div>
+            <a href="#" data-view="profile">تنظیمات پروفایل</a>
+            <a href="#" data-view="orders">سفارش‌ها و فاکتورها</a>
+            <a href="index.html">بازگشت به سایت</a>
+            <button type="button" id="dLogoutTop">خروج از حساب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="d-layout">
+    <!-- سایدبار -->
+    <aside class="d-sidebar" id="dSidebar">
+      <nav class="d-menu" id="dMenu">
+        <a href="#" class="d-item active" data-view="overview" data-label="نمای کلی">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="10" rx="2"/><rect x="13" y="3" width="8" height="6" rx="2"/><rect x="13" y="11" width="8" height="10" rx="2"/><rect x="3" y="15" width="8" height="6" rx="2"/></svg>
+          <span>نمای کلی</span>
+        </a>
+        <a href="#" class="d-item" data-view="courses" data-label="دوره‌های من">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
+          <span>دوره‌های من</span>
+          <em class="d-count" id="cntCourses">۰</em>
+        </a>
+        <a href="#" class="d-item" data-view="orders" data-label="سفارش‌ها">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>سفارش‌ها و فاکتورها</span>
+          <em class="d-count warn" id="cntOrders">۰</em>
+        </a>
+        <a href="#" class="d-item" data-view="favs" data-label="علاقه‌مندی‌ها">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <span>علاقه‌مندی‌ها</span>
+          <em class="d-count" id="cntFavs">۰</em>
+        </a>
+        <a href="#" class="d-item" data-view="tickets" data-label="تیکت‌ها">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3 8.6 8.6 0 0 1-3.6-.8L3 21l2-5.6a8.2 8.2 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/><path d="M8.5 11.5h.01M12.5 11.5h.01M16.5 11.5h.01"/></svg>
+          <span>تیکت‌های پشتیبانی</span>
+          <em class="d-count amber" id="cntTickets">۰</em>
+        </a>
+        <a href="#" class="d-item" data-view="profile" data-label="پروفایل">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>تنظیمات پروفایل</span>
+        </a>
+      </nav>
+      <div class="d-side-foot">
+        <div class="d-support-card">
+          <div class="d-support-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3 8.6 8.6 0 0 1-3.6-.8L3 21l2-5.6a8.2 8.2 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg>
+          </div>
+          <b>پشتیبانی ۲۴/۷</b>
+          <p>سوالی درباره دوره‌ها دارید؟</p>
+          <a href="#" class="btn btn-soft btn-sm btn-block" data-view="tickets">ارسال تیکت</a>
+        </div>
+        <a href="courses.html" class="d-site-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+          بازگشت به فروشگاه
+        </a>
+      </div>
+    </aside>
+    <div class="d-sideback" id="dSideback"></div>
+
+    <!-- محتوا -->
+    <main class="d-content" id="dContent">
+      <div class="view" id="view-overview"></div>
+      <div class="view" id="view-courses"></div>
+      <div class="view" id="view-orders"></div>
+      <div class="view" id="view-favs"></div>
+      <div class="view" id="view-tickets"></div>
+      <div class="view" id="view-profile"></div>
+    </main>
+  </div>
+
+  <!-- مودال فاکتور -->
+  <div class="d-modal" id="invModal" hidden>
+    <div class="d-modal-box invoice-sheet" id="invBody"></div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
