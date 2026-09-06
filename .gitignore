@@ -1,0 +1,26 @@
+# ==== OS / editor ====
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ==== Build / deps ====
+node_modules/
+dist/
+build/
+*.log
+
+# ==== WordPress ====
+wp-content/uploads/
+wp-content/cache/
+wp-config.php
+wp-content/upgrade/
+
+# ==== Heavy design files (keep out of Git, use Figma/Drive links) ====
+*.psd
+*.sketch
+*.ai
+*.fig
+*.xd
+*.zip
