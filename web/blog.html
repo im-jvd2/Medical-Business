@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>وبلاگ | مدیکال بیزینس</title>
+  <meta name="description" content="مقالات تخصصی رایگان درباره مارکتینگ، برندینگ و فروش در حوزه سلامت؛ هر هفته یک مطلب کاربردی برای پزشکان و مدیران مراکز درمانی">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
     <div class="container inner">
       <a href="index.html" class="brand">
         <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        <span class="brand-text"><strong>مدیکال بیزینس</strong><span>مارکتینگ و فروش پزشکی</span></span>
+        <span class="brand-text"><strong>مدیکال بیزینس</strong><span>آکادمی کسب‌وکار حوزه سلامت</span></span>
       </a>
       <nav class="nav" id="nav">
         <a href="index.html">خانه</a>
@@ -22,7 +24,6 @@
         <a href="contact.html">تماس با ما</a>
       </nav>
       <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary btn-sm">مشاهده دوره‌ها</a>
         <button class="nav-toggle" aria-label="باز کردن منو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </div>
@@ -32,67 +33,144 @@
     <div class="page-bg" style="background-image:url('assets/images/hero-blog.jpg');"></div>
     <div class="container">
       <div class="breadcrumb"><a href="index.html">خانه</a><span class="sep">/</span><span>وبلاگ</span></div>
-      <h1>وبلاگ آموزشی</h1>
-      <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+      <h1>وبلاگ آموزشی مدیکال بیزینس</h1>
+      <p>ایده‌ها و راهکارهای اجرایی برای رشد کسب‌وکارهای حوزه سلامت؛ هر مطلب، حاصل تجربه‌ی واقعی کار با کلینیک‌ها و مطب‌های ایرانی است.</p>
       <div class="hero-panel">
-        <div class="kpi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-6-6 18-2-8-8-2z"/></svg><div><b>مقالات تخصصی</b><small>مارکتینگ و برندینگ</small></div></div>
+        <div class="kpi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-6-6 18-2-8-8-2z"/></svg><div><b>مقالات تخصصی</b><small>مارکتینگ، برندینگ و فروش</small></div></div>
         <div class="kpi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><b>محتوای کاربردی</b><small>برای فعالان حوزه سلامت</small></div></div>
-        <div class="kpi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><div><b>به‌روزرسانی هفتگی</b><small>مقالات جدید</small></div></div>
+        <div class="kpi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><div><b>به‌روزرسانی هفتگی</b><small>جمعه‌ها منتشر می‌شود</small></div></div>
       </div>
     </div>
   </section>
 
   <section class="section" style="padding-top:40px;">
     <div class="container">
-      <div class="grid grid-3">
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/hero-blog.jpg" alt="مقاله آموزشی"></div>
+      <div class="filter-bar js-filter" data-target="#blogGrid">
+        <button class="chip active" data-filter="*">همه مقالات <span class="cnt">۹</span></button>
+        <button class="chip" data-filter="marketing">مارکتینگ <span class="cnt">۳</span></button>
+        <button class="chip" data-filter="branding">برندینگ <span class="cnt">۲</span></button>
+        <button class="chip" data-filter="sales">فروش <span class="cnt">۲</span></button>
+        <button class="chip" data-filter="mgmt">مدیریت <span class="cnt">۲</span></button>
+        <label class="filter-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" data-search placeholder="جستجو در مقالات...">
+        </label>
+      </div>
+
+      <div class="grid grid-3" id="blogGrid">
+
+        <article class="card blog-card" data-cat="branding">
+          <div class="thumb"><img src="assets/images/hero-blog.jpg" alt="برندسازی شخصی پزشکان"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۵ شهریور ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-branding">برندینگ</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۵ شهریور ۱۴۰۵</span></div>
+            <h3>نقشه‌راه برندسازی شخصی پزشکان؛ از صفحه اینستاگرام تا اتاق ویزیت</h3>
+            <p style="font-size:13px;color:var(--muted);">برند شخصی پزشک دیگر یک «امتیاز» نیست؛ یک «نیاز» است. در این مطلب مسیر ۹۰ روزه ساخت برند شخصی را قدم‌به‌قدم می‌خوانید.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/hero-contact.jpg" alt="مقاله آموزشی"></div>
+
+        <article class="card blog-card" data-cat="marketing">
+          <div class="thumb"><img src="assets/images/hero-contact.jpg" alt="سئوی محلی برای کلینیک"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۸ شهریور ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-marketing">مارکتینگ</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۸ شهریور ۱۴۰۵</span></div>
+            <h3>جذب بیمار از گوگل؛ اصول سئوی محلی برای کلینیک‌ها و مطب‌ها</h3>
+            <p style="font-size:13px;color:var(--muted);">وقتی کسی «بهترین دندانپزشک نزدیک من» را جستجو می‌کند، چطور کلینیک شما اول دیده شود؟ این چک‌لیست سئوی محلی را اجرا کنید.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/hero-courses.jpg" alt="مقاله آموزشی"></div>
+
+        <article class="card blog-card" data-cat="sales">
+          <div class="thumb"><img src="assets/images/thumb-sales.jpg" alt="اشتباهات قیمت‌گذاری"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱ شهریور ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-sales">فروش</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱ شهریور ۱۴۰۵</span></div>
+            <h3>قیمت‌گذاری خدمات درمانی؛ ۷ اشتباه رایج که سود مطب را می‌خورند</h3>
+            <p style="font-size:13px;color:var(--muted);">ارزان‌تر از رقبا بودن همیشه یعنی پول کمتر از جیب شما؛ نگاهی به رایج‌ترین اشتباه‌های تعرفه‌گذاری در مطب‌های ایرانی.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/thumb-marketing.jpg" alt="مقاله آموزشی"></div>
+
+        <article class="card blog-card" data-cat="marketing">
+          <div class="thumb"><img src="assets/images/thumb-marketing.jpg" alt="فالوور واقعی در اینستاگرام"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۲۶ مرداد ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-marketing">مارکتینگ</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۲۵ مرداد ۱۴۰۵</span></div>
+            <h3>چرا خرید فالوور دیگر جواب نمی‌دهد؟ نگاهی به الگوریتم ۱۴۰۵</h3>
+            <p style="font-size:13px;color:var(--muted);">ده‌ها میلیون فالوور قلابی در صفحات پزشکی؛ اما بیمار واقعی هنوز پیدا نمی‌شود. بررسی علمی نرخ تعامل و اعتبار الگوریتمی.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/thumb-branding.jpg" alt="مقاله آموزشی"></div>
+
+        <article class="card blog-card" data-cat="mgmt">
+          <div class="thumb"><img src="assets/images/hero-courses.jpg" alt="تجربه بیمار"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۹ مرداد ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-mgmt">مدیریت</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۸ مرداد ۱۴۰۵</span></div>
+            <h3>تجربه بیمار؛ مخفی‌ترین سلاح رشد کلینیک‌ها</h3>
+            <p style="font-size:13px;color:var(--muted);">بیمار ۳ دقیقه در انتظار اتاق پذیرش چه احساسی دارد؟ تجربه بیمار، از رزرو تلفنی تا پیامک یادآوری، تعیین می‌کند برند شما چطور دیده شود.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
-        <article class="card blog-card">
-          <div class="thumb"><img src="assets/images/thumb-sales.jpg" alt="مقاله آموزشی"></div>
+
+        <article class="card blog-card" data-cat="mgmt">
+          <div class="thumb"><img src="assets/images/hero-home.jpg" alt="CRM رایگان برای مطب"></div>
           <div class="body">
-            <span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۲ مرداد ۱۴۰۵</span>
-            <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
-            <a href="#" class="more" style="color:var(--blue); font-family:var(--font-head); font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:6px;">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <div class="blog-topline"><span class="tag tag-mgmt">مدیریت</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۱۰ مرداد ۱۴۰۵</span></div>
+            <h3>راه‌اندازی CRM ساده برای مطب با ابزارهای رایگان</h3>
+            <p style="font-size:13px;color:var(--muted);">خاطرات بیماران را در یک فایل اکسل گم نکنید؛ با این قالب رایگان، پیگیری‌های درمانی و یادآوری نوبت را سیستماتیک کنید.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
           </div>
         </article>
+
+        <article class="card blog-card" data-cat="marketing">
+          <div class="thumb"><img src="assets/images/thumb-branding.jpg" alt="تبلیغات پزشکان در اینستاگرام"></div>
+          <div class="body">
+            <div class="blog-topline"><span class="tag tag-marketing">مارکتینگ</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۲ مرداد ۱۴۰۵</span></div>
+            <h3>اینستاگرام پزشکان؛ کدام تبلیغات مجاز است و کدام پرونده‌ساز؟</h3>
+            <p style="font-size:13px;color:var(--muted);">مرز باریک بین «معرفی خدمت» و «تخلف تبلیغاتی» را بشناسید تا صفحه‌ای که سال‌ها ساختی‌د، یک‌شبه تعلیق نشود.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card" data-cat="sales">
+          <div class="thumb"><img src="assets/images/hero-course.jpg" alt="پیگیری بیمار بعد از ویزیت"></div>
+          <div class="body">
+            <div class="blog-topline"><span class="tag tag-sales">فروش</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۲۷ تیر ۱۴۰۵</span></div>
+            <h3>بعد از ویزیت چه اتفاقی می‌افتد؟ برنامه تشکر و پیگیری بیمار</h3>
+            <p style="font-size:13px;color:var(--muted);">۸۰٪ درآمد آینده شما در ۷۲ ساعت بعد از ویزیت ساخته می‌شود. یک سیستم ساده پیگیری بسازید که بیمار را برای درمان کامل حفظ کند.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card" data-cat="branding">
+          <div class="thumb"><img src="assets/images/hero-about.jpg" alt="داستان برند درمانی"></div>
+          <div class="body">
+            <div class="blog-topline"><span class="tag tag-branding">برندینگ</span><span class="date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 11h18"/></svg>۲۰ تیر ۱۴۰۵</span></div>
+            <h3>داستان برند؛ چطور بیمار با کلینیک شما «احساس» برقرار کند؟</h3>
+            <p style="font-size:13px;color:var(--muted);">بیمارها تصمیم‌شان را با قلب می‌گیرند و با منطق توجیهش می‌کنند. روایت داستان برند (Brand Story) را با مثال‌های حوزه سلامت بیاموزید.</p>
+            <a href="#" class="more">ادامه مطلب<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- خبرنامه -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="newsletter">
+        <div class="nl-inner">
+          <div>
+            <span class="eyebrow" style="color:#AEE0FF; margin-bottom:10px;">هیچ مقاله‌ای را از دست ندهید</span>
+            <h2>عضویت در خبرنامه هفتگی</h2>
+            <p>خلاصه‌ی بهترین مقاله هفته + چک‌لیست عملی و تخفیف‌های ویژه اعضا؛ مستقیم در ایمیل شما.</p>
+          </div>
+          <div>
+            <form class="nl-form js-form" data-msg="عضویت شما در خبرنامه ثبت شد.">
+              <input type="email" required placeholder="ایمیل یا شماره موبایل شما" aria-label="ایمیل">
+              <button class="btn btn-white" type="submit">عضویت رایگان</button>
+            </form>
+            <p class="nl-tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>ارسال حداکثر یک ایمیل در هفته؛ بدون اسپم.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -103,37 +181,40 @@
         <div class="footer-about">
           <a href="index.html" class="brand">
             <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
-            <span class="brand-text"><strong>مدیکال بیزینس</strong><span>مارکتینگ و فروش پزشکی</span></span>
+            <span class="brand-text"><strong>مدیکال بیزینس</strong><span>آکادمی کسب‌وکار حوزه سلامت</span></span>
           </a>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+          <p>آموزش و مشاوره تخصصی مارکتینگ، برندینگ و فروش برای پزشکان، دندانپزشکان و مدیران مراکز درمانی.</p>
           <div class="socials">
             <a href="#" aria-label="اینستاگرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="#" aria-label="تلگرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 3-9 9m0 0 4 8 5-17-9 9z"/></svg></a>
             <a href="#" aria-label="لینکدین"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5m0 0a3 3 0 0 1 6 0v5"/></svg></a>
+            <a href="#" aria-label="واتساپ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
           </div>
         </div>
         <div>
           <h4>دسترسی سریع</h4>
           <ul class="footer-links">
+            <li><a href="index.html">خانه</a></li>
             <li><a href="courses.html">دوره‌ها</a></li>
             <li><a href="about.html">درباره ما</a></li>
             <li><a href="blog.html">وبلاگ</a></li>
             <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="dashboard.html">پنل کاربری</a></li>
           </ul>
         </div>
         <div>
-          <h4>خدمات</h4>
+          <h4>دسته‌های وبلاگ</h4>
           <ul class="footer-links">
-            <li><a href="#">مشاوره مارکتینگ</a></li>
-            <li><a href="#">توسعه برندینگ</a></li>
-            <li><a href="#">افزایش فروش</a></li>
-            <li><a href="#">آموزش تخصصی</a></li>
+            <li><a href="blog.html">مقالات مارکتینگ</a></li>
+            <li><a href="blog.html">مقالات برندینگ</a></li>
+            <li><a href="blog.html">مقالات فروش</a></li>
+            <li><a href="blog.html">مدیریت مطب</a></li>
           </ul>
         </div>
         <div>
           <h4>اطلاعات تماس</h4>
           <ul class="footer-contact">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>۰۲۱-۱۲۳۴۵۶۷۸</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>۰۲۱-۹۱۰۰۸۸۷۷</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>info@medicalbusiness.ir</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>تهران، خیابان ولیعصر</li>
           </ul>
@@ -146,6 +227,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
