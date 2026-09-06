@@ -38,11 +38,38 @@
 
 ---
 
+## 🎨 رابط کاربری (UI Mockup)
+
+یک نمونه‌ی کامل و استاتیک از رابط کاربری سایت (HTML/CSS خالص، بدون وابستگی) در ریشه‌ی ریپو قرار دارد تا چیدمان المنت‌ها قبل از پیاده‌سازی وردپرس/المنتور دیده شود. این نسخه بعداً روی GitHub Pages (یا ساب‌دامنه) منتشر می‌شود.
+
+| فایل | صفحه |
+|------|------|
+| `index.html` | صفحه اصلی (خانه) |
+| `courses.html` | آرشیو دوره‌ها |
+| `course.html` | صفحه تکی دوره |
+| `about.html` | درباره ما |
+| `blog.html` | وبلاگ |
+| `contact.html` | تماس با ما |
+| `landing.html` | صفحه فرود (لندینگ) نمونه |
+
+- استایل مشترک: `assets/css/style.css` (مطابق `docs/06-design-system.md`)
+- اسکریپت: `assets/js/main.js` (منوی موبایل، آکاردئون، شمارنده)
+- فونت‌ها (میزبانی محلی): `assets/fonts/` — **آراد** برای عنوان‌ها، **یکان** برای متن
+
+> برای پیش‌نمایش محلی: `python3 -m http.server 8080` سپس `http://localhost:8080`
+
+---
+
 ## 📁 ساختار ریپو
 
 ```
 Medical-Business/
 ├── README.md                    ← همین فایل (هاب)
+├── index.html … landing.html    ← رابط کاربری (UI Mockup)
+├── assets/
+│   ├── css/style.css            ← سیستم طراحی
+│   ├── js/main.js
+│   └── fonts/                   ← آراد + یکان
 ├── docs/                        ← مستندات اصلی (Markdown)
 │   ├── 00-overview.md
 │   ├── 01-roadmap.md
