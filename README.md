@@ -40,23 +40,24 @@
 
 ## 🎨 رابط کاربری (UI Mockup)
 
-یک نمونه‌ی کامل و استاتیک از رابط کاربری سایت (HTML/CSS خالص، بدون وابستگی) در ریشه‌ی ریپو قرار دارد تا چیدمان المنت‌ها قبل از پیاده‌سازی وردپرس/المنتور دیده شود. این نسخه بعداً روی GitHub Pages (یا ساب‌دامنه) منتشر می‌شود.
+یک نمونه‌ی کامل و استاتیک از رابط کاربری سایت (HTML/CSS خالص، بدون وابستگی) در پوشه‌ی [`web/`](web/) قرار دارد تا چیدمان المنت‌ها قبل از پیاده‌سازی وردپرس/المنتور دیده شود. این نسخه بعداً روی GitHub Pages (یا ساب‌دامنه) منتشر می‌شود.
 
 | فایل | صفحه |
 |------|------|
-| `index.html` | صفحه اصلی (خانه) |
-| `courses.html` | آرشیو دوره‌ها |
-| `course.html` | صفحه تکی دوره |
-| `about.html` | درباره ما |
-| `blog.html` | وبلاگ |
-| `contact.html` | تماس با ما |
-| `landing.html` | صفحه فرود (لندینگ) نمونه |
+| `web/index.html` | صفحه اصلی (خانه) |
+| `web/courses.html` | آرشیو دوره‌ها |
+| `web/course.html` | صفحه تکی دوره |
+| `web/about.html` | درباره ما |
+| `web/blog.html` | وبلاگ |
+| `web/contact.html` | تماس با ما |
+| `web/landing.html` | صفحه فرود (لندینگ) نمونه |
 
-- استایل مشترک: `assets/css/style.css` (مطابق `docs/06-design-system.md`)
-- اسکریپت: `assets/js/main.js` (منوی موبایل، آکاردئون، شمارنده)
-- فونت‌ها (میزبانی محلی): `assets/fonts/` — **آراد** برای عنوان‌ها، **یکان** برای متن
+- استایل مشترک: `web/assets/css/style.css` (مطابق `docs/06-design-system.md`)
+- اسکریپت: `web/assets/js/main.js` (منوی موبایل، آکاردئون، شمارنده)
+- فونت‌ها (میزبانی محلی): `web/assets/fonts/` — **آراد** برای عنوان‌ها، **یکان** برای متن
+- تصاویر (میزبانی محلی): `web/assets/images/` — بنرهای هیرو و تصاویر محتوایی
 
-> برای پیش‌نمایش محلی: `python3 -m http.server 8080` سپس `http://localhost:8080`
+> برای پیش‌نمایش محلی: `cd web && python3 -m http.server 8080` سپس `http://localhost:8080`
 
 ---
 
@@ -65,11 +66,13 @@
 ```
 Medical-Business/
 ├── README.md                    ← همین فایل (هاب)
-├── index.html … landing.html    ← رابط کاربری (UI Mockup)
-├── assets/
-│   ├── css/style.css            ← سیستم طراحی
-│   ├── js/main.js
-│   └── fonts/                   ← آراد + یکان
+├── web/                         ← رابط کاربری (UI Mockup)
+│   ├── index.html … landing.html
+│   └── assets/
+│       ├── css/style.css        ← سیستم طراحی
+│       ├── js/main.js
+│       ├── fonts/               ← آراد + یکان
+│       └── images/              ← بنرها و تصاویر پزشکی
 ├── docs/                        ← مستندات اصلی (Markdown)
 │   ├── 00-overview.md
 │   ├── 01-roadmap.md
@@ -80,8 +83,6 @@ Medical-Business/
 │   ├── 06-design-system.md
 │   ├── 07-scenario.md
 │   └── 08-launch-checklist.md
-├── assets/
-│   └── images/                  ← لوگو، تصاویر مرجع سبک، موکاپ
 └── .github/
     ├── ISSUE_TEMPLATE/          ← قالب تسک/باگ/درخواست صفحه
     └── pull_request_template.md
