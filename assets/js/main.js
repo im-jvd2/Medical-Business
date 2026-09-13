@@ -365,15 +365,15 @@
     return '' +
       '<div class="modal-overlay" id="authModal" hidden>' +
       '  <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">' +
-      '    <button class="modal-close" id="authClose" aria-label="بستن"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-59"></use></svg></button>' +
+      '    <button class="modal-close" id="authClose" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button>' +
       '    <div class="auth-aside">' +
-      '      <span class="logo-mark"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-01"></use></svg></span>' +
+      '      <span class="logo-mark"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
       '      <h3>پنل کاربری مدیکال بیزینس</h3>' +
       '      <p>دوره‌های خود را پیگیری کنید، پیشرفت‌تان را ببینید، فاکتور بگیرید و از پشتیبانی بپرسید.</p>' +
       '      <ul class="auth-points">' +
-      '        <li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-56"></use></svg>دسترسی مادام‌العمر به دوره‌ها</li>' +
-      '        <li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-56"></use></svg>پیگیری سفارش و فاکتور آنلاین</li>' +
-      '        <li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-56"></use></svg>گواهی پایان دوره</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>دسترسی مادام‌العمر به دوره‌ها</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>پیگیری سفارش و فاکتور آنلاین</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>گواهی پایان دوره</li>' +
       '      </ul>' +
       '      <div class="demo-hint">' +
       '        <b>یوزر تستی</b>' +
@@ -399,11 +399,11 @@
       '  <p class="auth-sub">برای ورود به پنل کاربری، اطلاعات خود را وارد کنید.</p>' +
       '  <div class="field">' +
       '    <label for="auUser">نام کاربری یا موبایل</label>' +
-      '    <div class="input-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-60"></use></svg><input id="auUser" type="text" placeholder="مثلاً admin یا ۰۹۱۲xxxxxxx" autocomplete="username"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auUser" type="text" placeholder="مثلاً admin یا ۰۹۱۲xxxxxxx" autocomplete="username"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auPass">رمز عبور</label>' +
-      '    <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-61"></use></svg><input id="auPass" type="password" placeholder="••••••" autocomplete="current-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-62"></use></svg></button></div>' +
+      '    <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-61"></use></svg><input id="auPass" type="password" placeholder="••••••" autocomplete="current-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="#ic-62"></use></svg></button></div>' +
       '  </div>' +
       '  <div class="auth-err" id="auErr" hidden></div>' +
       '  <button type="submit" class="btn btn-primary btn-lg btn-block">ورود به پنل کاربری</button>' +
@@ -418,24 +418,24 @@
       '  <p class="auth-sub">در چند ثانیه عضو شوید و دوره‌های خود را مدیریت کنید.</p>' +
       '  <div class="field">' +
       '    <label for="auName">نام و نام خانوادگی</label>' +
-      '    <div class="input-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-60"></use></svg><input id="auName" type="text" placeholder="مثلاً مهدی شاهنظری"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auName" type="text" placeholder="مثلاً مهدی شاهنظری"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auUserR">نام کاربری (با آن وارد می‌شوید)</label>' +
-      '    <div class="input-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-60"></use></svg><input id="auUserR" type="text" placeholder="مثلاً maria_2000" autocomplete="username"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auUserR" type="text" placeholder="مثلاً maria_2000" autocomplete="username"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auMail">موبایل یا ایمیل</label>' +
-      '    <div class="input-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-63"></use></svg><input id="auMail" type="text" placeholder="۰۹۱۲xxxxxxx یا you@mail.com"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-63"></use></svg><input id="auMail" type="text" placeholder="۰۹۱۲xxxxxxx یا you@mail.com"></div>' +
       '  </div>' +
       '  <div class="grid grid-2" style="gap:14px;">' +
       '    <div class="field">' +
       '      <label for="auPassR">رمز عبور</label>' +
-      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-64"></use></svg><input id="auPassR" type="password" placeholder="حداقل ۴ کاراکتر" autocomplete="new-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-62"></use></svg></button></div>' +
+      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-64"></use></svg><input id="auPassR" type="password" placeholder="حداقل ۴ کاراکتر" autocomplete="new-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="#ic-62"></use></svg></button></div>' +
       '    </div>' +
       '    <div class="field">' +
       '      <label for="auPassR2">تکرار رمز عبور</label>' +
-      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-64"></use></svg><input id="auPassR2" type="password" placeholder="تکرار رمز" autocomplete="new-password"></div>' +
+      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-64"></use></svg><input id="auPassR2" type="password" placeholder="تکرار رمز" autocomplete="new-password"></div>' +
       '    </div>' +
       '  </div>' +
       '  <label class="agree"><input type="checkbox" id="auAgree"><span><a href="terms.html" target="_blank">قوانین و مقررات</a> و <a href="privacy.html" target="_blank">حریم خصوصی</a> را می‌پذیرم.</span></label>' +
@@ -637,7 +637,7 @@
       '  <span class="avatar avatar-xs">' + initials + '</span>' +
       '  <span class="uc-name">' + u.name.split(' ')[0] + '</span>' +
       '</a>' +
-      '<button class="icon-btn js-logout" title="خروج از حساب"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-65"></use></svg></button>';
+      '<button class="icon-btn js-logout" title="خروج از حساب"><svg width="1em" height="1em"><use href="#ic-65"></use></svg></button>';
     holder.querySelector('.js-logout').addEventListener('click', function () {
       setSessionUser(null);
       renderAuthArea();

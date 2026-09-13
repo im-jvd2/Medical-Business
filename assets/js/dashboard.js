@@ -23,31 +23,31 @@
     var h = '';
     for (var i = 0; i < 5; i++) {
       h += i < full
-        ? '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-17"></use></svg>'
-        : '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-48"></use></svg>';
+        ? '<svg width="1em" height="1em"><use href="#ic-17"></use></svg>'
+        : '<svg width="1em" height="1em"><use href="#ic-48"></use></svg>';
     }
     return '<span class="st">' + h + '</span>';
   }
 
   var I = {
-    clock: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>',
-    cap: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-53"></use></svg>',
-    cert: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-27"></use></svg>',
-    doc: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-54"></use></svg>',
-    heart: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-44"></use></svg>',
-    chat: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-45"></use></svg>',
-    user: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-06"></use></svg>',
-    phone: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-09"></use></svg>',
-    mail: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-24"></use></svg>',
-    pin: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-25"></use></svg>',
-    bag: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-43"></use></svg>',
-    trend: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-08"></use></svg>',
-    play: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-49"></use></svg>',
-    arrow: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-47"></use></svg>',
-    print: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-55"></use></svg>',
-    check: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-56"></use></svg>',
-    eye: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-57"></use></svg>',
-    trash: '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-58"></use></svg>'
+    clock: '<svg width="1em" height="1em"><use href="#ic-14"></use></svg>',
+    cap: '<svg width="1em" height="1em"><use href="#ic-53"></use></svg>',
+    cert: '<svg width="1em" height="1em"><use href="#ic-27"></use></svg>',
+    doc: '<svg width="1em" height="1em"><use href="#ic-54"></use></svg>',
+    heart: '<svg width="1em" height="1em"><use href="#ic-44"></use></svg>',
+    chat: '<svg width="1em" height="1em"><use href="#ic-45"></use></svg>',
+    user: '<svg width="1em" height="1em"><use href="#ic-06"></use></svg>',
+    phone: '<svg width="1em" height="1em"><use href="#ic-09"></use></svg>',
+    mail: '<svg width="1em" height="1em"><use href="#ic-24"></use></svg>',
+    pin: '<svg width="1em" height="1em"><use href="#ic-25"></use></svg>',
+    bag: '<svg width="1em" height="1em"><use href="#ic-43"></use></svg>',
+    trend: '<svg width="1em" height="1em"><use href="#ic-08"></use></svg>',
+    play: '<svg width="1em" height="1em"><use href="#ic-49"></use></svg>',
+    arrow: '<svg width="1em" height="1em"><use href="#ic-47"></use></svg>',
+    print: '<svg width="1em" height="1em"><use href="#ic-55"></use></svg>',
+    check: '<svg width="1em" height="1em"><use href="#ic-56"></use></svg>',
+    eye: '<svg width="1em" height="1em"><use href="#ic-57"></use></svg>',
+    trash: '<svg width="1em" height="1em"><use href="#ic-58"></use></svg>'
   };
 
   var state = { user: null, view: 'overview', ticket: null, coursesFilter: '' };
@@ -326,7 +326,7 @@
       return '<tr><td>' + esc(it.title) + '</td><td>۱</td><td>' + fa(it.price) + ' تومان</td></tr>';
     }).join('');
     var stTxt = o.status === 'paid' ? 'پرداخت شده' : 'در انتظار پرداخت';
-    return '<div class="inv-head"><div class="inv-brand"><span class="logo-mark"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-01"></use></svg></span>' +
+    return '<div class="inv-head"><div class="inv-brand"><span class="logo-mark"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
       '<div><b>مدیکال بیزینس</b><span>مارکتینگ و فروش پزشکی · medicalbusiness.ir</span></div></div>' +
       '<div class="inv-title">فاکتور فروش<small>نسخه رسمی — قابل ارائه به واحد مالی</small></div></div>' +
       '<div class="inv-cols"><div class="ic"><label>شماره فاکتور</label><code>' + o.no + '</code></div>' +
@@ -489,10 +489,10 @@
     if (!enr || !enr.done || !co) { MBAuth.toast('این دوره هنوز تکمیل نشده است.', 'info'); return; }
     var code = 'MB-' + u.username.toUpperCase() + '-' + String(enr.courseId.toUpperCase()).replace('-', '');
     openModal('certModal', '<div class="d-modal-head"><h3>گواهی پایان دوره</h3>' +
-      '<button class="modal-close" data-close="certModal" aria-label="بستن"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-59"></use></svg></button></div>' +
+      '<button class="modal-close" data-close="certModal" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button></div>' +
       '<div class="cert-sheet" id="printArea"><div class="cert-orn"></div>' +
       '<div class="cert-body">' +
-      '<span class="cert-logo"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-01"></use></svg></span>' +
+      '<span class="cert-logo"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
       '<p class="cert-pre">مرکز تخصصی مدیکال بیزینس</p>' +
       '<h2 class="cert-title">گواهی پایان دوره</h2>' +
       '<p class="cert-mid">این گواهی به‌پاس تکمیل موفقیت‌آمیز دوره به نام زیر اعطا می‌شود:</p>' +
@@ -589,7 +589,7 @@
       var openBtn = $('#tkOpen');
       if (openBtn) openBtn.addEventListener('click', function () {
         var m = openModal('tkModal', '<div class="d-modal-head"><h3>تیکت جدید پشتیبانی</h3>' +
-          '<button class="modal-close" data-close="tkModal" aria-label="بستن"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-59"></use></svg></button></div>' +
+          '<button class="modal-close" data-close="tkModal" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button></div>' +
           '<form id="tkFormX">' +
           '<div class="field"><label for="tkSubjectX">موضوع</label><input id="tkSubjectX" required placeholder="مثلاً: مشکل در دسترسی به جلسه‌ها"></div>' +
           '<div class="field"><label for="tkDeptX">دپارتمان</label><select id="tkDeptX">' +

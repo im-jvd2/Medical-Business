@@ -253,5 +253,5 @@ MB.icon = function (name, cls) {
     chat: 'ic-chat',
     inf: 'ic-inf'
   }[name] || 'ic-inf';
-  return '<svg width="1em" height="1em"' + s + '><use href="assets/icons/sprite.svg#' + id + '"></use></svg>';
+  return '<svg width="1em" height="1em"' + s + '><use href="#' + id + '"></use></svg>';
 };

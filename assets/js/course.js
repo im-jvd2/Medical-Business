@@ -14,8 +14,8 @@
     var full = Math.round(r || 0), h = '<span class="st">';
     for (var i = 0; i < 5; i++) {
       h += i < full
-        ? '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-17"></use></svg>'
-        : '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-48"></use></svg>';
+        ? '<svg width="1em" height="1em"><use href="#ic-17"></use></svg>'
+        : '<svg width="1em" height="1em"><use href="#ic-48"></use></svg>';
     }
     return h + '</span>';
   }
@@ -69,10 +69,10 @@
       '      </div>' +
       '    </div>' +
       '    <div class="hero-panel">' +
-      '      <div class="kpi"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-12"></use></svg><div><b>' + fa(c.lessons) + ' جلسه ویدیویی</b><small>کیفیت FullHD + جزوه</small></div></div>' +
-      '      <div class="kpi"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg><div><b>' + fa(c.minutes) + ' دقیقه</b><small>محتوای فشرده و کاربردی</small></div></div>' +
-      '      <div class="kpi"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-15"></use></svg><div><b>' + fa(c.students) + ' دانشجو</b><small>از سراسر ایران</small></div></div>' +
-      '      <div class="kpi"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-29"></use></svg><div><b>دسترسی مادام‌العمر</b><small>+ به‌روزرسانی رایگان</small></div></div>' +
+      '      <div class="kpi"><svg width="1em" height="1em"><use href="#ic-12"></use></svg><div><b>' + fa(c.lessons) + ' جلسه ویدیویی</b><small>کیفیت FullHD + جزوه</small></div></div>' +
+      '      <div class="kpi"><svg width="1em" height="1em"><use href="#ic-14"></use></svg><div><b>' + fa(c.minutes) + ' دقیقه</b><small>محتوای فشرده و کاربردی</small></div></div>' +
+      '      <div class="kpi"><svg width="1em" height="1em"><use href="#ic-15"></use></svg><div><b>' + fa(c.students) + ' دانشجو</b><small>از سراسر ایران</small></div></div>' +
+      '      <div class="kpi"><svg width="1em" height="1em"><use href="#ic-29"></use></svg><div><b>دسترسی مادام‌العمر</b><small>+ به‌روزرسانی رایگان</small></div></div>' +
       '    </div>' +
       '  </div>' +
       '</section>' +
@@ -84,7 +84,7 @@
 
       /* کاور */
       '        <div class="cover cd-cover"><img src="' + c.cover + '" alt="' + c.title + '">' +
-      '          <div class="cover-play"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-49"></use></svg><span>پیش‌نمایش جلسه اول</span></div>' +
+      '          <div class="cover-play"><svg width="1em" height="1em"><use href="#ic-49"></use></svg><span>پیش‌نمایش جلسه اول</span></div>' +
       '        </div>' +
 
       /* درباره دوره */
@@ -95,7 +95,7 @@
       '        <h2 class="cd-title">در پایان دوره چه چیزی به دست می‌آورید؟</h2>' +
       '        <ul class="checklist cd-outcomes">' +
       c.outcomes.map(function (o) {
-        return '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-16"></use></svg><div><p>' + o + '</p></div></li>';
+        return '<li><svg width="1em" height="1em"><use href="#ic-16"></use></svg><div><p>' + o + '</p></div></li>';
       }).join('') +
       '        </ul>' +
 
@@ -109,8 +109,8 @@
           '<span class="ls-title">' + ls.t + (ls.free ? '<span class="lesson-free">رایگان</span>' : '') + '</span>' +
           '<span class="dur">' + fa(ls.d) + ' دقیقه</span>' +
           (ls.free
-            ? '<span class="ls-act"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-49"></use></svg></span>'
-            : '<span class="ls-act locked"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-50"></use></svg></span>') +
+            ? '<span class="ls-act"><svg width="1em" height="1em"><use href="#ic-49"></use></svg></span>'
+            : '<span class="ls-act locked"><svg width="1em" height="1em"><use href="#ic-50"></use></svg></span>') +
           '</li>';
       }).join('') +
       '        </ul>' +
@@ -119,7 +119,7 @@
       '        <h2 class="cd-title">این دوره برای چه کسانی مناسب است؟</h2>' +
       '        <div class="audience-grid">' +
       c.audience.map(function (a) {
-        return '<div class="card aud-item"><span class="aud-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-06"></use></svg></span><p>' + a + '</p></div>';
+        return '<div class="card aud-item"><span class="aud-ic"><svg width="1em" height="1em"><use href="#ic-06"></use></svg></span><p>' + a + '</p></div>';
       }).join('') +
       '        </div>' +
 
@@ -132,18 +132,18 @@
       '            <div class="teacher-role">' + teacher.role + '</div>' +
       '            <p>' + teacher.bio + '</p>' +
       '            <a class="more" href="about.html">آشنایی با مدرس دوره' +
-      '              <svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-04"></use></svg></a>' +
+      '              <svg width="1em" height="1em"><use href="#ic-04"></use></svg></a>' +
       '          </div>' +
       '        </div>' +
 
       /* سوالات */
       '        <h2 class="cd-title">سوالات متداول این دوره</h2>' +
       '        <div class="faq">' +
-      '          <div class="faq-item"><button class="faq-q">اگر بعد از خرید پشیمان شدم چه؟<span class="ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-19"></use></svg></span></button>' +
+      '          <div class="faq-item"><button class="faq-q">اگر بعد از خرید پشیمان شدم چه؟<span class="ic"><svg width="1em" height="1em"><use href="#ic-19"></use></svg></span></button>' +
       '            <div class="faq-a"><p>تا ۷ روز پس از خرید، اگر کمتر از ۲ جلسه را مشاهده کرده باشید، مبلغ به‌صورت کامل بازگردانده می‌شود. کافی است از بخش تیکت‌ها درخواست دهید.</p></div></div>' +
-      '          <div class="faq-item"><button class="faq-q">آیا این دوره برای تازه‌کارها مناسب است؟<span class="ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-19"></use></svg></span></button>' +
+      '          <div class="faq-item"><button class="faq-q">آیا این دوره برای تازه‌کارها مناسب است؟<span class="ic"><svg width="1em" height="1em"><use href="#ic-19"></use></svg></span></button>' +
       '            <div class="faq-a"><p>بله. دوره سطح «' + c.level + '» دارد و حتی اگر هیچ آشنایی قبلی ندارید، جلسات ابتدایی شما را قدم‌به‌قدم جلو می‌برد.</p></div></div>' +
-      '          <div class="faq-item"><button class="faq-q">چطور مدرک یا گواهی بگیرم؟<span class="ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-19"></use></svg></span></button>' +
+      '          <div class="faq-item"><button class="faq-q">چطور مدرک یا گواهی بگیرم؟<span class="ic"><svg width="1em" height="1em"><use href="#ic-19"></use></svg></span></button>' +
       '            <div class="faq-a"><p>پس از مشاهده همه جلسات و ارسال پروژه پایانی، گواهی با کد رهگیری در پنل کاربری شما صادر می‌شود.</p></div></div>' +
       '        </div>' +
       '      </div>' +
@@ -167,7 +167,7 @@
         return '<article class="card course-card"><div class="thumb"><img src="' + r.cover + '" alt="' + r.title + '">' +
           '<span class="badge badge-glass">' + r.catLabel + '</span><span class="badge badge-glass level">' + r.level + '</span></div>' +
           '<div class="body"><h3>' + r.title + '</h3><p class="desc">' + r.desc + '</p>' +
-          '<div class="meta-row"><span><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>' + fa(r.minutes) + ' دقیقه</span></div>' +
+          '<div class="meta-row"><span><svg width="1em" height="1em"><use href="#ic-14"></use></svg>' + fa(r.minutes) + ' دقیقه</span></div>' +
           '<div class="foot"><div class="price">' + fa(r.price) + ' <small>تومان</small></div>' +
           '<a href="course.html?c=' + r.id + '" class="btn btn-primary btn-sm">مشاهده دوره</a></div></div></article>';
       }).join('') +
@@ -180,16 +180,16 @@
     if (enr) {
       var p = Math.min(enr.progress || 0, 100);
       return '<div class="price-block own-block">' +
-        '<span class="own-ic"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-51"></use></svg></span>' +
+        '<span class="own-ic"><svg width="1em" height="1em"><use href="#ic-51"></use></svg></span>' +
         '<div class="own-title">شما این دوره را دارید</div>' +
         (enr.done
           ? '<span class="badge badge-green mt-8">دوره تکمیل شده — گواهی صادر شد</span>'
           : '<div class="own-prog"><div class="own-prog-top"><span>پیشرفت شما</span><b>' + fa(p) + '٪</b></div><div class="own-prog-bar"><i style="width:' + p + '%"></i></div></div>') +
         '</div>' +
         '<ul class="info-list">' +
-        '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>مدت دوره: ' + fa(c.minutes) + ' دقیقه</li>' +
-        '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>تاریخ ثبت‌نام: ' + enr.enrolledAt + '</li>' +
-        '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-15"></use></svg>مدرس: ' + MB.teacherLink(c.teacher) + '</li>' +
+        '<li><svg width="1em" height="1em"><use href="#ic-14"></use></svg>مدت دوره: ' + fa(c.minutes) + ' دقیقه</li>' +
+        '<li><svg width="1em" height="1em"><use href="#ic-14"></use></svg>تاریخ ثبت‌نام: ' + enr.enrolledAt + '</li>' +
+        '<li><svg width="1em" height="1em"><use href="#ic-15"></use></svg>مدرس: ' + MB.teacherLink(c.teacher) + '</li>' +
         '</ul>' +
         '<div class="cta-wrap">' +
         (enr.done
@@ -204,20 +204,20 @@
       (oldPct ? '<span class="badge badge-green mt-8">' + oldPct + '٪ تخفیف ویژه</span>' : '<span class="badge badge-blue mt-8">پرداخت امن آنلاین</span>') +
       '</div>' +
       '<ul class="info-list">' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-12"></use></svg>' + fa(c.lessons) + ' جلسه آموزشی ویدیویی</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>مدت دوره: ' + fa(c.minutes) + ' دقیقه</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-15"></use></svg>مدرس: ' + MB.teacherLink(c.teacher) + '</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-15"></use></svg>' + fa(c.students) + ' دانشجو در دوره</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-14"></use></svg>سطح دوره: ' + c.level + '</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-29"></use></svg>گواهی معتبر پایان دوره</li>' +
-      '<li><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-52"></use></svg>دسترسی مادام‌العمر + به‌روزرسانی</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-12"></use></svg>' + fa(c.lessons) + ' جلسه آموزشی ویدیویی</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-14"></use></svg>مدت دوره: ' + fa(c.minutes) + ' دقیقه</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-15"></use></svg>مدرس: ' + MB.teacherLink(c.teacher) + '</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-15"></use></svg>' + fa(c.students) + ' دانشجو در دوره</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-14"></use></svg>سطح دوره: ' + c.level + '</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-29"></use></svg>گواهی معتبر پایان دوره</li>' +
+      '<li><svg width="1em" height="1em"><use href="#ic-52"></use></svg>دسترسی مادام‌العمر + به‌روزرسانی</li>' +
       '</ul>' +
       '<div class="cta-wrap">' +
       '<button class="btn btn-primary btn-lg js-enroll" data-course="' + c.id + '" style="width:100%;">' +
-      '<svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-05"></use></svg>خرید و ثبت‌نام در دوره</button>' +
+      '<svg width="1em" height="1em"><use href="#ic-05"></use></svg>خرید و ثبت‌نام در دوره</button>' +
       '<button class="btn btn-secondary js-fav" style="width:100%; margin-top:10px;">' +
       (isFav(c.id) ? '♥ در علاقه‌مندی‌ها' : '♡ افزودن به علاقه‌مندی‌ها') + '</button>' +
-      '<p class="side-note"><svg width="1em" height="1em"><use href="assets/icons/sprite.svg#ic-51"></use></svg>ضمانت بازگشت وجه تا ۷ روز پس از خرید</p>' +
+      '<p class="side-note"><svg width="1em" height="1em"><use href="#ic-51"></use></svg>ضمانت بازگشت وجه تا ۷ روز پس از خرید</p>' +
       '</div>';
   }
 
