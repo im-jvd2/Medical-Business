@@ -230,7 +230,7 @@
   /* =====================================================================
      AUTH — سیستم ورود/ثبت‌نام دمو (localStorage)
      ===================================================================== */
-  var SEED_VERSION = '3';
+  var SEED_VERSION = '4';
 
   function seed() {
     if (localStorage.getItem(LS_SEED) === SEED_VERSION && localStorage.getItem(LS_USERS)) return;
@@ -246,28 +246,28 @@
       mobile: '09121000000',
       email: 'admin@medicalbusiness.ir',
       job: 'مدیر کلینیک تخصصی',
-      city: 'تهران',
+      city: 'اصفهان',
       bio: 'این اکانت تستی برای بررسی داشبورد کاربری ساخته شده است.',
       createdAt: '۱۴۰۳/۰۲/۱۵',
       courses: [
-        { courseId: 'mkt-101', enrolledAt: '۱۴۰۵/۰۳/۱۰', progress: 64, lastSeen: 'جلسه ۶: بودجه‌بندی بازاریابی', done: false },
-        { courseId: 'brd-201', enrolledAt: '۱۴۰۵/۰۳/۱۰', progress: 35, lastSeen: 'جلسه ۳: پرسونای برند', done: false },
-        { courseId: 'ctn-102', enrolledAt: '۱۴۰۵/۰۴/۰۲', progress: 12, lastSeen: 'جلسه ۲: استراتژی محتوا', done: false },
-        { courseId: 'fin-401', enrolledAt: '۱۴۰۴/۱۱/۲۰', progress: 100, lastSeen: 'تکمیل شده', done: true, finishedAt: '۱۴۰۵/۰۵/۳۰' }
+        { courseId: 'mbm-101', enrolledAt: '۱۴۰۵/۰۳/۱۰', progress: 64, lastSeen: 'جلسه ۵: سیستم‌سازی فرایندها (SOP)', done: false },
+        { courseId: 'aes-201', enrolledAt: '۱۴۰۵/۰۳/۱۰', progress: 35, lastSeen: 'جلسه ۳: مهندسی پیشنهادهای درمانی', done: false },
+        { courseId: 'rcp-301', enrolledAt: '۱۴۰۵/۰۴/۰۲', progress: 12, lastSeen: 'جلسه ۲: جملات ممنوعه در پاسخگویی', done: false },
+        { courseId: 'sop-401', enrolledAt: '۱۴۰۴/۱۱/۲۰', progress: 100, lastSeen: 'تکمیل شده', done: true, finishedAt: '۱۴۰۵/۰۵/۳۰' }
       ],
       orders: [
         order('MB-1405-0184', '۱۴۰۵/۰۳/۱۰', [
-          { title: 'دوره جامع مارکتینگ پزشکی', price: 1900000 },
-          { title: 'تولید محتوا برای شبکه‌های اجتماعی', price: 1700000 }
-        ], 3600000, 'paid'),
+          { title: 'مسترکلاس جامع MBM (Medical Business Masterclass)', price: 8900000 },
+          { title: 'اسکریپت طلایی پذیرش (Reception Mastery)', price: 1900000 }
+        ], 10800000, 'paid'),
         order('MB-1405-0217', '۱۴۰۵/۰۴/۰۲', [
-          { title: 'برندینگ کلینیک و مطب', price: 2400000 }
-        ], 2400000, 'paid'),
+          { title: 'دستگاه پول‌ساز کلینیک‌های زیبایی و دندانپزشکی', price: 4900000 }
+        ], 4900000, 'paid'),
         order('MB-1405-0341', '۱۴۰۵/۰۵/۲۸', [
-          { title: 'تکنیک‌های فروش خدمات درمانی', price: 2200000 }
-        ], 2200000, 'pending')
+          { title: 'سیستم‌سازی و رهایی پزشک از مطب', price: 3900000 }
+        ], 3900000, 'pending')
       ],
-      favs: ['sal-301', 'vis-202'],
+      favs: ['brd-501', 'sop-401'],
       tickets: [
         {
           id: 'TCK-1042', subject: 'درخواست فاکتور رسمی دوره‌ها',
@@ -278,7 +278,7 @@
           ]
         },
         {
-          id: 'TCK-0987', subject: 'گواهی پایان دوره قیمت‌گذاری',
+          id: 'TCK-0987', subject: 'گواهی پایان دوره سیستم‌سازی و رهایی پزشک از مطب',
           dept: 'آموزش', status: 'done', created: '۱۴۰۵/۰۴/۱۲', updated: '۱۴۰۵/۰۴/۱۵',
           msgs: [
             { from: 'user', text: 'دوره را کامل کردم؛ گواهی کی صادر می‌شود؟' },
@@ -287,7 +287,7 @@
         }
       ],
       notifications: [
-        { t: 'دوره «برندینگ کلینیک و مطب» به‌روزرسانی شد؛ جلسات جدید را ببینید.', d: '۲ ساعت پیش', unread: true },
+        { t: 'دوره «پرسونال برندینگ اثرگذار پزشکان» به‌روزرسانی شد؛ جلسات جدید را ببینید.', d: '۲ ساعت پیش', unread: true },
         { t: 'فاکتور MB-1405-0341 در انتظار پرداخت است.', d: 'دیروز', unread: true }
       ]
     });
@@ -295,7 +295,7 @@
     users.push({
       username: 'sara',
       password: '123456',
-      name: 'دکتر سارا کریمی',
+      name: 'دکتر زهرا موسوی',
       role: 'buyer',
       mobile: '09122112233',
       email: 'sara@example.com',
@@ -304,19 +304,19 @@
       bio: '',
       createdAt: '۱۴۰۵/۰۵/۰۱',
       courses: [
-        { courseId: 'vis-202', enrolledAt: '۱۴۰۵/۰۵/۰۴', progress: 48, lastSeen: 'جلسه ۵: همکاری با طراح', done: false },
-        { courseId: 'sal-301', enrolledAt: '۱۴۰۵/۰۵/۰۴', progress: 8, lastSeen: 'جلسه ۲: گفتگوی اکتشافی', done: false }
+        { courseId: 'brd-501', enrolledAt: '۱۴۰۵/۰۵/۰۴', progress: 48, lastSeen: 'جلسه ۴: اعتمادسازی سریع برای مراجعین جدید', done: false },
+        { courseId: 'rcp-301', enrolledAt: '۱۴۰۵/۰۵/۰۴', progress: 8, lastSeen: 'جلسه ۲: جملات ممنوعه در پاسخگویی', done: false }
       ],
       orders: [
         order('MB-1405-0288', '۱۴۰۵/۰۵/۰۴', [
-          { title: 'هویت بصری برند درمانی', price: 2000000 },
-          { title: 'تکنیک‌های فروش خدمات درمانی', price: 2200000 }
-        ], 4200000, 'paid')
+          { title: 'پرسونال برندینگ اثرگذار پزشکان', price: 3400000 },
+          { title: 'اسکریپت طلایی پذیرش (Reception Mastery)', price: 1900000 }
+        ], 5300000, 'paid')
       ],
-      favs: ['mkt-101'],
+      favs: ['mbm-101'],
       tickets: [
         {
-          id: 'TCK-1011', subject: 'دسترسی به جلسه‌های جدید برندینگ',
+          id: 'TCK-1011', subject: 'دسترسی به جلسه‌های جدید پرسونال برندینگ',
           dept: 'آموزش', status: 'open', created: '۱۴۰۵/۰۶/۰۳', updated: '۱۴۰۵/۰۶/۰۳',
           msgs: [
             { from: 'user', text: 'سلام، جلسات جدید دوره برندینگ را در پنل نمی‌بینم.' }
@@ -365,15 +365,15 @@
     return '' +
       '<div class="modal-overlay" id="authModal" hidden>' +
       '  <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">' +
-      '    <button class="modal-close" id="authClose" aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>' +
+      '    <button class="modal-close" id="authClose" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button>' +
       '    <div class="auth-aside">' +
-      '      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>' +
+      '      <span class="logo-mark"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
       '      <h3>پنل کاربری مدیکال بیزینس</h3>' +
       '      <p>دوره‌های خود را پیگیری کنید، پیشرفت‌تان را ببینید، فاکتور بگیرید و از پشتیبانی بپرسید.</p>' +
       '      <ul class="auth-points">' +
-      '        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>دسترسی مادام‌العمر به دوره‌ها</li>' +
-      '        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>پیگیری سفارش و فاکتور آنلاین</li>' +
-      '        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>گواهی پایان دوره</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>دسترسی مادام‌العمر به دوره‌ها</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>پیگیری سفارش و فاکتور آنلاین</li>' +
+      '        <li><svg width="1em" height="1em"><use href="#ic-56"></use></svg>گواهی پایان دوره</li>' +
       '      </ul>' +
       '      <div class="demo-hint">' +
       '        <b>یوزر تستی</b>' +
@@ -399,11 +399,11 @@
       '  <p class="auth-sub">برای ورود به پنل کاربری، اطلاعات خود را وارد کنید.</p>' +
       '  <div class="field">' +
       '    <label for="auUser">نام کاربری یا موبایل</label>' +
-      '    <div class="input-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><input id="auUser" type="text" placeholder="مثلاً admin یا ۰۹۱۲xxxxxxx" autocomplete="username"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auUser" type="text" placeholder="مثلاً admin یا ۰۹۱۲xxxxxxx" autocomplete="username"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auPass">رمز عبور</label>' +
-      '    <div class="input-ic pass-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12s2.5-6 7-6 7 6 7 6-2.5 6-7 6-7-6-7-6z"/><circle cx="12" cy="12" r="2.5"/></svg><input id="auPass" type="password" placeholder="••••••" autocomplete="current-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button></div>' +
+      '    <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-61"></use></svg><input id="auPass" type="password" placeholder="••••••" autocomplete="current-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="#ic-62"></use></svg></button></div>' +
       '  </div>' +
       '  <div class="auth-err" id="auErr" hidden></div>' +
       '  <button type="submit" class="btn btn-primary btn-lg btn-block">ورود به پنل کاربری</button>' +
@@ -418,27 +418,27 @@
       '  <p class="auth-sub">در چند ثانیه عضو شوید و دوره‌های خود را مدیریت کنید.</p>' +
       '  <div class="field">' +
       '    <label for="auName">نام و نام خانوادگی</label>' +
-      '    <div class="input-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><input id="auName" type="text" placeholder="مثلاً مریم نادری"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auName" type="text" placeholder="مثلاً مهدی شاهنظری"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auUserR">نام کاربری (با آن وارد می‌شوید)</label>' +
-      '    <div class="input-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><input id="auUserR" type="text" placeholder="مثلاً maria_2000" autocomplete="username"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-60"></use></svg><input id="auUserR" type="text" placeholder="مثلاً maria_2000" autocomplete="username"></div>' +
       '  </div>' +
       '  <div class="field">' +
       '    <label for="auMail">موبایل یا ایمیل</label>' +
-      '    <div class="input-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><input id="auMail" type="text" placeholder="۰۹۱۲xxxxxxx یا you@mail.com"></div>' +
+      '    <div class="input-ic"><svg width="1em" height="1em"><use href="#ic-63"></use></svg><input id="auMail" type="text" placeholder="۰۹۱۲xxxxxxx یا you@mail.com"></div>' +
       '  </div>' +
       '  <div class="grid grid-2" style="gap:14px;">' +
       '    <div class="field">' +
       '      <label for="auPassR">رمز عبور</label>' +
-      '      <div class="input-ic pass-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input id="auPassR" type="password" placeholder="حداقل ۴ کاراکتر" autocomplete="new-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button></div>' +
+      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-64"></use></svg><input id="auPassR" type="password" placeholder="حداقل ۴ کاراکتر" autocomplete="new-password"><button type="button" class="pass-eye" aria-label="نمایش رمز"><svg width="1em" height="1em"><use href="#ic-62"></use></svg></button></div>' +
       '    </div>' +
       '    <div class="field">' +
       '      <label for="auPassR2">تکرار رمز عبور</label>' +
-      '      <div class="input-ic pass-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input id="auPassR2" type="password" placeholder="تکرار رمز" autocomplete="new-password"></div>' +
+      '      <div class="input-ic pass-wrap"><svg width="1em" height="1em"><use href="#ic-64"></use></svg><input id="auPassR2" type="password" placeholder="تکرار رمز" autocomplete="new-password"></div>' +
       '    </div>' +
       '  </div>' +
-      '  <label class="agree"><input type="checkbox" id="auAgree"><span><a href="#" onclick="return false">قوانین و مقررات</a> و <a href="#" onclick="return false">حریم خصوصی</a> را می‌پذیرم.</span></label>' +
+      '  <label class="agree"><input type="checkbox" id="auAgree"><span><a href="terms.html" target="_blank">قوانین و مقررات</a> و <a href="privacy.html" target="_blank">حریم خصوصی</a> را می‌پذیرم.</span></label>' +
       '  <div class="auth-err" id="auErr" hidden></div>' +
       '  <button type="submit" class="btn btn-primary btn-lg btn-block">ساخت حساب و ورود</button>' +
       '  <p class="auth-alt">قبلاً ثبت‌نام کرده‌اید؟ <button type="button" class="linkish" data-goto="login">وارد شوید</button></p>' +
@@ -637,7 +637,7 @@
       '  <span class="avatar avatar-xs">' + initials + '</span>' +
       '  <span class="uc-name">' + u.name.split(' ')[0] + '</span>' +
       '</a>' +
-      '<button class="icon-btn js-logout" title="خروج از حساب"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg></button>';
+      '<button class="icon-btn js-logout" title="خروج از حساب"><svg width="1em" height="1em"><use href="#ic-65"></use></svg></button>';
     holder.querySelector('.js-logout').addEventListener('click', function () {
       setSessionUser(null);
       renderAuthArea();
@@ -690,7 +690,7 @@
     $$('.js-enroll').forEach(function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-        var id = btn.getAttribute('data-course') || 'mkt-101';
+        var id = btn.getAttribute('data-course') || 'mbm-101';
         var user = getSessionUser();
         if (!user) {
           pendingEnroll = id;

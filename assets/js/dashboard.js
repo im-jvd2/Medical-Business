@@ -23,31 +23,31 @@
     var h = '';
     for (var i = 0; i < 5; i++) {
       h += i < full
-        ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg>'
-        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg>';
+        ? '<svg width="1em" height="1em"><use href="#ic-17"></use></svg>'
+        : '<svg width="1em" height="1em"><use href="#ic-48"></use></svg>';
     }
     return '<span class="st">' + h + '</span>';
   }
 
   var I = {
-    clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>',
-    cap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>',
-    cert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m9.5 14-1.5 8 4-2.5 4 2.5-1.5-8"/></svg>',
-    doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 11h2"/></svg>',
-    heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
-    chat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3 8.6 8.6 0 0 1-3.6-.8L3 21l2-5.6a8.2 8.2 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/><path d="M8.5 11.5h.01M12.5 11.5h.01M16.5 11.5h.01"/></svg>',
-    user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-    phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>',
-    mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>',
-    pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-    bag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
-    trend: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>',
-    play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
-    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg>',
-    print: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
-    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
-    eye: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
-    trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg>'
+    clock: '<svg width="1em" height="1em"><use href="#ic-14"></use></svg>',
+    cap: '<svg width="1em" height="1em"><use href="#ic-53"></use></svg>',
+    cert: '<svg width="1em" height="1em"><use href="#ic-27"></use></svg>',
+    doc: '<svg width="1em" height="1em"><use href="#ic-54"></use></svg>',
+    heart: '<svg width="1em" height="1em"><use href="#ic-44"></use></svg>',
+    chat: '<svg width="1em" height="1em"><use href="#ic-45"></use></svg>',
+    user: '<svg width="1em" height="1em"><use href="#ic-06"></use></svg>',
+    phone: '<svg width="1em" height="1em"><use href="#ic-09"></use></svg>',
+    mail: '<svg width="1em" height="1em"><use href="#ic-24"></use></svg>',
+    pin: '<svg width="1em" height="1em"><use href="#ic-25"></use></svg>',
+    bag: '<svg width="1em" height="1em"><use href="#ic-43"></use></svg>',
+    trend: '<svg width="1em" height="1em"><use href="#ic-08"></use></svg>',
+    play: '<svg width="1em" height="1em"><use href="#ic-49"></use></svg>',
+    arrow: '<svg width="1em" height="1em"><use href="#ic-47"></use></svg>',
+    print: '<svg width="1em" height="1em"><use href="#ic-55"></use></svg>',
+    check: '<svg width="1em" height="1em"><use href="#ic-56"></use></svg>',
+    eye: '<svg width="1em" height="1em"><use href="#ic-57"></use></svg>',
+    trash: '<svg width="1em" height="1em"><use href="#ic-58"></use></svg>'
   };
 
   var state = { user: null, view: 'overview', ticket: null, coursesFilter: '' };
@@ -182,7 +182,7 @@
       catMap[co.catLabel] = (catMap[co.catLabel] || 0) + 1;
     });
     var cats = Object.keys(catMap);
-    var colors = { 'مارکتینگ': '#2E86DE', 'برندینگ': '#A78BFA', 'فروش': '#F59E0B', 'فروش و مدیریت': '#F59E0B', 'سایر': '#94A3B8' };
+    var colors = { 'مارکتینگ': '#2E86DE', 'برندینگ': '#A78BFA', 'فروش': '#F59E0B', 'مدیریت و سیستم‌سازی': '#0EA5E9', 'سایر': '#94A3B8' };
     var donutHTML, legendHTML;
     if (!cats.length) {
       donutHTML = '<div class="donut" style="background:conic-gradient(#E5EAF0 0 100%)"><div class="donut-txt"><b>۰</b><span>دوره</span></div></div>';
@@ -190,7 +190,7 @@
     } else {
       var total = u.courses.length;
       var segs = [], acc = 0;
-      var orderCats = ['مارکتینگ', 'برندینگ', 'فروش', 'فروش و مدیریت'];
+      var orderCats = ['مارکتینگ', 'برندینگ', 'فروش', 'مدیریت و سیستم‌سازی'];
       var sorted = orderCats.filter(function (k) { return catMap[k]; });
       sorted.forEach(function (k) {
         var pct = Math.round(catMap[k] / total * 100);
@@ -217,7 +217,7 @@
         if (!co) return '';
         var p = Math.min(c.progress || 0, 100);
         return '<div class="cont-item"><div class="ci-thumb"><img src="' + co.cover + '" alt=""></div>' +
-          '<div class="ci-mid"><b>' + esc(co.title) + '</b><small>' + esc(co.teacher) + ' · ' + esc(co.level) + '</small>' +
+          '<div class="ci-mid"><b>' + esc(co.title) + '</b><small>' + MB.teacherLink(esc(co.teacher)) + ' · ' + esc(co.level) + '</small>' +
           '<div class="ci-prog-wrap"><div class="ci-prog"><i style="width:' + p + '%"></i></div><span class="ci-prog-num">' + fa(p) + '٪</span></div></div>' +
           '<a class="btn btn-primary btn-sm" href="course.html?c=' + co.id + '">' + (p ? 'ادامه' : 'شروع') + '</a></div>';
       }).join('') + '</div>';
@@ -273,7 +273,7 @@
       else { st = 'در حال یادگیری'; cls = 'doing'; }
       return '<div class="mc-card"><div class="mc-cover"><img src="' + co.cover + '" alt="' + esc(co.title) + '"><span class="mc-state ' + cls + '">' + st + '</span></div>' +
         '<div class="mc-body"><h3>' + esc(co.title) + '</h3>' +
-        '<span class="mc-teacher">' + I.user + esc(co.teacher) + ' · ' + esc(co.level) + '</span>' +
+        '<span class="mc-teacher">' + I.user + MB.teacherLink(esc(co.teacher)) + ' · ' + esc(co.level) + '</span>' +
         '<div class="mc-progress"><div class="mp-top"><span>پیشرفت دوره</span><b>' + fa(p) + '٪</b></div><div class="mp"><i style="width:' + p + '%"></i></div></div>' +
         '<div class="mc-foot">' +
         (c.done
@@ -326,7 +326,7 @@
       return '<tr><td>' + esc(it.title) + '</td><td>۱</td><td>' + fa(it.price) + ' تومان</td></tr>';
     }).join('');
     var stTxt = o.status === 'paid' ? 'پرداخت شده' : 'در انتظار پرداخت';
-    return '<div class="inv-head"><div class="inv-brand"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>' +
+    return '<div class="inv-head"><div class="inv-brand"><span class="logo-mark"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
       '<div><b>مدیکال بیزینس</b><span>مارکتینگ و فروش پزشکی · medicalbusiness.ir</span></div></div>' +
       '<div class="inv-title">فاکتور فروش<small>نسخه رسمی — قابل ارائه به واحد مالی</small></div></div>' +
       '<div class="inv-cols"><div class="ic"><label>شماره فاکتور</label><code>' + o.no + '</code></div>' +
@@ -356,7 +356,7 @@
     html += '<div class="fav-grid">' + favs.map(function (co) {
       var owned = u.courses.some(function (c) { return c.courseId === co.id; });
       return '<div class="fav-card"><div class="fc-thumb"><img src="' + co.cover + '" alt=""></div>' +
-        '<div class="fc-mid"><h3>' + esc(co.title) + '</h3><p>' + esc(co.teacher) + ' · ' + esc(co.level) + '</p>' +
+        '<div class="fc-mid"><h3>' + esc(co.title) + '</h3><p>' + MB.teacherLink(esc(co.teacher)) + ' · ' + esc(co.level) + '</p>' +
         '<div class="fc-price">' + fa(co.price) + ' <small style="font-size:11px;color:var(--muted);">تومان</small></div></div>' +
         '<div class="fc-actions">' +
         (owned
@@ -461,7 +461,7 @@
       '<div class="field"><label for="pJob">عنوان شغلی</label><input id="pJob" value="' + esc(u.job || '') + '" placeholder="مثلاً پزشک عمومی"></div>' +
       '<div class="field"><label for="pMobile">موبایل</label><input id="pMobile" value="' + esc(u.mobile || '') + '" placeholder="۰۹۱۲xxxxxxx"></div>' +
       '<div class="field"><label for="pMail">ایمیل</label><input id="pMail" value="' + esc(u.email || '') + '" placeholder="you@mail.com"></div>' +
-      '<div class="field"><label for="pCity">شهر</label><input id="pCity" value="' + esc(u.city || '') + '" placeholder="مثلاً تهران"></div>' +
+      '<div class="field"><label for="pCity">شهر</label><input id="pCity" value="' + esc(u.city || '') + '" placeholder="مثلاً اصفهان"></div>' +
       '<div class="field"><label for="pUsername">نام کاربری (غیرقابل تغییر)</label><input id="pUsername" value="' + esc(u.username) + '" disabled></div>' +
       '<div class="field" style="grid-column:1/-1;"><label for="pBio">درباره من</label><textarea id="pBio" style="min-height:90px;" placeholder="چند خط درباره خودتان...">' + esc(u.bio || '') + '</textarea></div>' +
       '<div class="d-form-actions" style="grid-column:1/-1;"><button class="btn btn-primary" type="submit">ذخیره تغییرات</button></div>' +
@@ -489,18 +489,18 @@
     if (!enr || !enr.done || !co) { MBAuth.toast('این دوره هنوز تکمیل نشده است.', 'info'); return; }
     var code = 'MB-' + u.username.toUpperCase() + '-' + String(enr.courseId.toUpperCase()).replace('-', '');
     openModal('certModal', '<div class="d-modal-head"><h3>گواهی پایان دوره</h3>' +
-      '<button class="modal-close" data-close="certModal" aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>' +
+      '<button class="modal-close" data-close="certModal" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button></div>' +
       '<div class="cert-sheet" id="printArea"><div class="cert-orn"></div>' +
       '<div class="cert-body">' +
-      '<span class="cert-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>' +
-      '<p class="cert-pre">آکادمی مدیکال بیزینس</p>' +
+      '<span class="cert-logo"><svg width="1em" height="1em"><use href="#ic-01"></use></svg></span>' +
+      '<p class="cert-pre">مرکز تخصصی مدیکال بیزینس</p>' +
       '<h2 class="cert-title">گواهی پایان دوره</h2>' +
       '<p class="cert-mid">این گواهی به‌پاس تکمیل موفقیت‌آمیز دوره به نام زیر اعطا می‌شود:</p>' +
       '<div class="cert-name">' + esc(u.name) + '</div>' +
       '<div class="cert-course">«' + esc(co.title) + '»</div>' +
       '<div class="cert-meta"><span>تاریخ: ' + esc(enr.finishedAt || enr.enrolledAt) + '</span><span>مدت: ' + fa(co.minutes) + ' دقیقه</span></div>' +
       '<div class="cert-foot"><span class="cert-code">کد رهگیری: ' + code + '</span>' +
-      '<span class="cert-sign">مدیر آکادمی مدیکال بیزینس<br><i>مریم نادری</i></span></div>' +
+      '<span class="cert-sign">مهدی شاهنظری<br><i>بنیان‌گذار و مدرس مدیکال بیزینس</i></span></div>' +
       '</div></div>' +
       '<div class="d-form-actions" style="justify-content:center;margin-top:16px;">' +
       '<button class="btn btn-primary" id="certPrint">' + I.print + ' چاپ گواهی</button></div>');
@@ -589,7 +589,7 @@
       var openBtn = $('#tkOpen');
       if (openBtn) openBtn.addEventListener('click', function () {
         var m = openModal('tkModal', '<div class="d-modal-head"><h3>تیکت جدید پشتیبانی</h3>' +
-          '<button class="modal-close" data-close="tkModal" aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>' +
+          '<button class="modal-close" data-close="tkModal" aria-label="بستن"><svg width="1em" height="1em"><use href="#ic-59"></use></svg></button></div>' +
           '<form id="tkFormX">' +
           '<div class="field"><label for="tkSubjectX">موضوع</label><input id="tkSubjectX" required placeholder="مثلاً: مشکل در دسترسی به جلسه‌ها"></div>' +
           '<div class="field"><label for="tkDeptX">دپارتمان</label><select id="tkDeptX">' +

@@ -1154,3 +1154,21 @@ body.no-scroll { overflow: hidden; }
 .more svg { width: 16px; height: 16px; transition: transform .2s ease; }
 .more:hover { color: var(--blue-deep); }
 .more:hover svg { transform: translateX(-4px); }
+
+/* ===== لینک نام مدرس (مهدی شاهنظری) ===== */
+.cd-teacher a { color: inherit; text-decoration: none; }
+.cd-teacher a:hover { text-decoration: underline; }
+.teacher-info h3 a,
+.mc-teacher a,
+.ci-mid a,
+.fc-mid a { color: inherit; text-decoration: none; }
+.teacher-info h3 a:hover,
+.mc-teacher a:hover,
+.ci-mid a:hover,
+.fc-mid a:hover { color: var(--blue); text-decoration: underline; }
+
+/* ===== لینک وب‌سایت مدرس در فوتر و کارت تیم ===== */
+.footer-contact a { color: inherit; text-decoration: none; }
+.footer-contact a:hover { text-decoration: underline; }
+.team-card .name a { color: inherit; text-decoration: none; }
+.team-card .name a:hover { color: var(--blue); text-decoration: underline; }
