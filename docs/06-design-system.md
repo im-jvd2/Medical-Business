@@ -87,4 +87,4 @@
 | نمونه UI (مرجع اصلی طراحی) | فایل‌های HTML ریشه مخزن: `index.html`, `about.html`, `courses.html`, `course.html`, `contact.html`, `blog.html`, `landing.html`, `dashboard.html`, `terms.html`, `privacy.html` — ✅ تأیید کارفرما |
 | استایل مرجع | `assets/css/style.css` و `assets/css/dashboard.css` |
 | Figma | ❌ کنسل شد — پیاده‌سازی مستقیم روی وردپرس/المنتور |
-| لوگو و هویت | ⏳ TODO |
+| لوگو و هویت | ✅ طراحی شده — نسخه نهایی روی سایت اصلی `medicalbusiness.ir` قرار گرفته است |
