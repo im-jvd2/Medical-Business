@@ -20,7 +20,7 @@
 | هشدار | — | `#F59E0B` | هشدارها |
 | خطا | — | `#EF4444` | پیام‌های خطا |
 
-> ⏳ TODO — نسخه‌ی نهایی رنگ‌ها را در Figma تثبیت کنید و متغیرهای سراسری (Global Colors) را در المنتور با همین HEX تعریف کنید.
+> ✅ رنگ‌ها در نمونه UI (`assets/css/style.css`) تثبیت شده و متغیرهای سراسری (Global Colors) در المنتور با همین HEX تعریف شده‌اند.
 
 ---
 
@@ -84,6 +84,7 @@
 
 | منبع | لینک |
 |------|------|
-| فایل Figma | ⏳ TODO |
-| موکاپ‌ها | ⏳ TODO |
+| نمونه UI (مرجع اصلی طراحی) | فایل‌های HTML ریشه مخزن: `index.html`, `about.html`, `courses.html`, `course.html`, `contact.html`, `blog.html`, `landing.html`, `dashboard.html`, `terms.html`, `privacy.html` — ✅ تأیید کارفرما |
+| استایل مرجع | `assets/css/style.css` و `assets/css/dashboard.css` |
+| Figma | ❌ کنسل شد — پیاده‌سازی مستقیم روی وردپرس/المنتور |
 | لوگو و هویت | ⏳ TODO |
