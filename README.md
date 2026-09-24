@@ -37,6 +37,7 @@
 | 6 | [`docs/06-design-system.md`](docs/06-design-system.md) | سیستم طراحی (رنگ، تایپو، کامپوننت) |
 | 7 | [`docs/07-scenario.md`](docs/07-scenario.md) | سناریوی کامل ساخت از صفر تا صد |
 | 8 | [`docs/08-launch-checklist.md`](docs/08-launch-checklist.md) | چک‌لیست نهایی قبل از انتشار |
+| 9 | [`docs/09-services-page.md`](docs/09-services-page.md) | مشخصات و راهنمای پیاده‌سازی صفحه خدمات (المنتور) |
 
 ---
 
@@ -49,6 +50,7 @@
 | `index.html` | صفحه اصلی (خانه) |
 | `courses.html` | آرشیو دوره‌ها (فیلتر و جستجو) |
 | `course.html` | صفحه تکی دوره (پویا با `?c=course-id`) |
+| `services.html` | **خدمات** (۵ خدمت تخصصی + فرایند همکاری + سوالات متداول + فرم درخواست مشاوره) |
 | `about.html` | درباره ما (ارزش‌ها، تیم، خط زمانی) |
 | `blog.html` | وبلاگ (۹ مقاله با فیلتر دسته و جستجو) |
 | `contact.html` | تماس با ما (فرم فعال + سوالات متداول) |
@@ -99,7 +101,8 @@ Medical-Business/
 │   ├── 05-site-architecture.md
 │   ├── 06-design-system.md
 │   ├── 07-scenario.md
-│   └── 08-launch-checklist.md
+│   ├── 08-launch-checklist.md
+│   └── 09-services-page.md
 └── .github/
     ├── ISSUE_TEMPLATE/          ← قالب تسک/باگ/درخواست صفحه
     └── pull_request_template.md
@@ -116,6 +119,7 @@ Medical-Business/
   - [x] ۳.۱ نصب و پیکربندی پایه
   - [x] ۳.۲ المنتور، رنگ/فونت سراسری، Header و Footer
   - [ ] ۳.۳ صفحات اصلی — 🔄 صفحه اصلی در حال طراحی
+    - [x] نمونه UI صفحه **خدمات** آماده شد (`services.html` + راهنمای پیاده‌سازی در `docs/09-services-page.md`)
   - [ ] ۳.۴ بخش دوره‌ها (قالب تکی/آرشیو، پنل کاربری، فروش) — پس از تکمیل صفحات اصلی و آماده‌شدن افزونه Course-Management
 - [ ] فاز ۴ — محتوا و سئو
 - [ ] فاز ۵ — تست و انتشار

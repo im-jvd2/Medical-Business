@@ -11,6 +11,7 @@
 flowchart TD
     Home[🏠 خانه] --> About[درباره ما]
     Home --> Courses[دوره‌ها]
+    Home --> Services[خدمات]
     Home --> Blog[وبلاگ]
     Home --> Contact[تماس با ما]
     Home --> Dashboard[پنل کاربری]
@@ -19,6 +20,7 @@ flowchart TD
     Courses --> RCP[اسکریپت طلایی پذیرش]
     Courses --> SOP[سیستم‌سازی و رهایی پزشک از مطب]
     Courses --> BRD[پرسونال برندینگ اثرگذار پزشکان]
+    Services --> SvcRequest[فرم درخواست مشاوره رایگان]
     Blog --> Post1[مقاله ۱]
     Blog --> PostN[...]
     Home --> Landing[لندینگ‌ها]
@@ -37,9 +39,12 @@ flowchart TD
 |----------|---------|-------|
 | خانه | `/` (`index.html`) | ۱ |
 | دوره‌ها | `/courses` (`courses.html`) | ۲ |
-| درباره ما | `/about` (`about.html`) | ۳ |
-| وبلاگ | `/blog` (`blog.html`) | ۴ |
-| تماس با ما | `/contact` (`contact.html`) | ۵ |
+| خدمات | `/services` (`services.html`) | ۳ |
+| درباره ما | `/about` (`about.html`) | ۴ |
+| وبلاگ | `/blog` (`blog.html`) | ۵ |
+| تماس با ما | `/contact` (`contact.html`) | ۶ |
+
+> صفحه‌ی خدمات (۵ خدمت تخصصی) پیش از این فقط به‌صورت سکشن در صفحه اصلی وجود داشت؛ اکنون صفحه‌ی مستقل `/services` هم ساخته شده است (نمونه UI: `services.html`، راهنمای المنتور: [`09-services-page.md`](09-services-page.md)).
 
 ### دکمه‌ی CTA در هدر
 - متن: «ورود / ثبت‌نام» (مودال) — برای کاربر مهمان؛ پس از ورود، دسترسی به پنل کاربری.
