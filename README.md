@@ -83,7 +83,8 @@
 ```
 Medical-Business/
 ├── README.md                    ← همین فایل (هاب)
-├── index.html … dashboard.html  ← رابط کاربری (UI Mockup) — منتشرشده روی GitHub Pages
+├── index.html … post.html       ← رابط کاربری (UI Mockup) — منتشرشده روی GitHub Pages
+├── content/blog/                ← پیش‌نویس ۹ مقاله‌ی وبلاگ (برای بارگذاری در وردپرس)
 ├── assets/
 │   ├── css/style.css            ← سیستم طراحی + انیمیشن‌ها + مودال ورود
 │   ├── css/dashboard.css        ← استایل پنل کاربری
