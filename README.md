@@ -38,6 +38,7 @@
 | 7 | [`docs/07-scenario.md`](docs/07-scenario.md) | سناریوی کامل ساخت از صفر تا صد |
 | 8 | [`docs/08-launch-checklist.md`](docs/08-launch-checklist.md) | چک‌لیست نهایی قبل از انتشار |
 | 9 | [`docs/09-services-page.md`](docs/09-services-page.md) | مشخصات و راهنمای پیاده‌سازی صفحه خدمات (المنتور) |
+| 10 | [`docs/10-blog-articles.md`](docs/10-blog-articles.md) | وبلاگ: بریف ۹ مقاله + قالب نوشته تکی + نقشه لینک‌سازی |
 
 ---
 
@@ -82,7 +83,8 @@
 ```
 Medical-Business/
 ├── README.md                    ← همین فایل (هاب)
-├── index.html … dashboard.html  ← رابط کاربری (UI Mockup) — منتشرشده روی GitHub Pages
+├── index.html … post.html       ← رابط کاربری (UI Mockup) — منتشرشده روی GitHub Pages
+├── content/blog/                ← پیش‌نویس ۹ مقاله‌ی وبلاگ (برای بارگذاری در وردپرس)
 ├── assets/
 │   ├── css/style.css            ← سیستم طراحی + انیمیشن‌ها + مودال ورود
 │   ├── css/dashboard.css        ← استایل پنل کاربری
@@ -102,7 +104,8 @@ Medical-Business/
 │   ├── 06-design-system.md
 │   ├── 07-scenario.md
 │   ├── 08-launch-checklist.md
-│   └── 09-services-page.md
+│   ├── 09-services-page.md
+│   └── 10-blog-articles.md
 └── .github/
     ├── ISSUE_TEMPLATE/          ← قالب تسک/باگ/درخواست صفحه
     └── pull_request_template.md
@@ -118,9 +121,9 @@ Medical-Business/
 - [ ] فاز ۳ — پیاده‌سازی وردپرس/المنتور — 🔄 **در حال اجرا**
   - [x] ۳.۱ نصب و پیکربندی پایه
   - [x] ۳.۲ المنتور، رنگ/فونت سراسری، Header و Footer
-  - [ ] ۳.۳ صفحات اصلی — 🔄 صفحه اصلی در حال طراحی
-    - [x] نمونه UI صفحه **خدمات** آماده شد (`services.html` + راهنمای پیاده‌سازی در `docs/09-services-page.md`)
-  - [ ] ۳.۴ بخش دوره‌ها (قالب تکی/آرشیو، پنل کاربری، فروش) — پس از تکمیل صفحات اصلی و آماده‌شدن افزونه Course-Management
+  - [x] ۳.۳ صفحات اصلی — ✅ **۵ صفحه در المنتور تکمیل شد: خانه، خدمات، درباره ما، وبلاگ (آرشیو)، تماس با ما** (۱۴۰۵/۰۷/۰۶)
+  - [ ] ۳.۳+ تکمیل وبلاگ — 🔄 متن نهایی ۹ مقاله (`content/blog/`) + ۹ تصویر شاخص (`assets/images/blog/`) + نمونه UI قالب تکی (`post.html` با دیدگاه‌ها) ✅ آماده شد؛ تصمیم‌های کارفرما در `docs/10` §۸ ثبت شد — ⏳ ساخت قالب در المنتور و انتشار یکجا در وردپرس
+  - [ ] ۳.۴ بخش دوره‌ها (قالب تکی/آرشیو، پنل کاربری، فروش) — پس از آماده‌شدن افزونه Course-Management
 - [ ] فاز ۴ — محتوا و سئو
 - [ ] فاز ۵ — تست و انتشار
 
